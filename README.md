@@ -37,7 +37,7 @@ python eval/eval_llm.py
 | `llm` | `LLM_BASE_URL` (Ollama local, Ollama trên Kaggle hoặc Qwen API) | Khả năng của model khi không có RAG |
 | `backend` | API chat của backend qua `BACKEND_URL` | Cả hệ thống khi có RAG (chưa hỗ trợ, chờ backend có API chat) |
 
-Bộ câu hỏi nằm ở `eval/questions.jsonl` (mỗi dòng một câu: `id`, `subject`, `grade`, `question`,
+Bộ câu hỏi nằm ở `eval/questions.jsonl` (mỗi dòng một câu: `id`, `subject` (`physics`, `chemistry`, `biology`, `general`), `grade`, `question`,
 `reference`). Kết quả lưu thành file CSV trong `eval/results/`.
 
 ## Cấu trúc
